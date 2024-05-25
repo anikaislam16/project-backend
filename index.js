@@ -10,7 +10,7 @@ const connectToMongoDB = require("./server.js");
 
 const app = express();
 
-
+app.set("trust proxy", 1);
 const ScrumRoute = require("./routes/scrumRoute/ScrumRoute.js");
 const pdfRoute = require("./routes/pdfRoutes/pdfRoutes.js");
 const MessageRoute = require("./routes/messageRoute/MessageRoute.js");
